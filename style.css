@@ -3,6 +3,10 @@ body {
   font-size: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #myBtn {
   display: none;
   position: fixed;

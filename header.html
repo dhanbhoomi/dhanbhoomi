@@ -53,14 +53,23 @@ function includeHTML() {
   }
 }
 </script>
-
+<style type="text/css">
+  .whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 75px;
+    z-index: 100;
+    right:  15px;
+}
+</style>
 
 
 </head>
 <body>
 
 
-<header class="text-gray-700 body-font">
+<header class="text-gray-700 body-font" style="padding-bottom: 0px;">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <img src="./img/logo1.png" style="width: 65%;height: auto;">
@@ -76,6 +85,11 @@ function includeHTML() {
     </nav>
   </div>
 </header>
+
+<a  class="whats-app" href="https://api.whatsapp.com/send?phone=918329996079&text=Hello,%20Shana%20Solutions,%20I%20am%20happy%20to%20be%20your%20Client!!%20Please%20Share%20me%20more%20details%20on%20-%20" target="_blank">
+    
+    <img src="./img/waplogo.png" aria-hidden="true">
+</a>
 
 </body>
 </html>
