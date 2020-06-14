@@ -1,158 +1,199 @@
 <!DOCTYPE html>
-<html style="scroll-behavior: smooth;">
+<html>
 <head>
-	<title>Dhanbhoomi Agrotech</title>
-	<meta charset="utf-8">
-	<link href="./tailwind.min.css" rel="stylesheet">
+	<title>DHANBHOOMI AGROTECH</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-	<!-- Font Awesome -->
-<link rel="stylesheet" href="./css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="./css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="./css/mdb.min.css" rel="stylesheet">
-
-<!-- JQuery -->
-<script type="text/javascript" src="./js/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src=".js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="./js/mdb.min.js"></script>
-
-
-
-
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body bgcolor="">
-	<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
-    }
+<body>
+<header class="header">
+	<nav class="navbar navbar-style">
+	<div class="container-fluid black-bar">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                    <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+917058010511" class="black-bar-link">+91 7058010511</a>,
+                    &nbsp;&nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+919370659228" class="black-bar-link">+91 9370659228</a> &nbsp;&nbsp;&nbsp;<i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+919960167230" class="black-bar-link">+91 9960167230</a> &nbsp;
+                    &nbsp;&nbsp;<i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="#" class="black-bar-link" style="text-transform: lowercase;">dhanbhoomi@yahoo.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+		<div class="container">
+			<div class="col-lg-3 col-sm-2 col-md-2 col-xs-12">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href=""><img src="./img/logo1.png" class="logo"></a>
+				</div>
+			</div>
+			<div class="col-lg-9 col-sm-10 col-md-10 col-xs-12">
+				<div class="collapse navbar-collapse" id="micon">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="">Home</a></li>
+						<li><a href="">Products</a></li>
+						<li><a href="index.html#about">About Us</a></li>
+						<li><a href="index.html#contact">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
   }
 }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
-	<div class="top" w3-include-html="header.html"></div>
-	<script>
-	includeHTML();
-	</script>
+<br>
+	<!-- <hr class="style4"> -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 banner-image">
+				<img src="./img/logo2.jpg" class="img-responsive animated fadeInUp animatedFadeInUp">
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 banner-info">
+				<h1 class="big-text">Dhanboomi Agrotech</h1>
+				<p>FARMERS BRIGHT AND SECURE FUTURE COMPANION</p>
+				<p>100% ORGANIC</p>
+				
+				
+				<ul style="padding-left: 50px;text-align: justify;">
+					<li class="slogan">ORGANIC FARMING IS NOT JUST OUR BUSINESS THAT IS OUR LIFE !!!!!!!</li>
+				</ul>
+				<a href="#" class="btn btn-first">Products</a>
+				<a href="index.html#contact" class="btn btn-second">Contact</a>
+			</div>
+		</div>			
+	</div>
+	<hr class="style4">
+	<div class="container">
+	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel" data-slide-to="1"></li>
+	      <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
 
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner">
+	      <div class="item active">
+	        <img src="./img/visit2.jpg" alt="Los Angeles" style="width:100%;">
+	      </div>
 
-
-	<section class="text-gray-700 body-font" style="padding-top: 0px;">
-	  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-	    <img src="./img/logo2.jpg" style="width: 50%;height: auto;" class="animated fadeInUp slower lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded">
-	    <div class="text-center lg:w-2/3 w-full">
-	      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">100% ORGANIC</h1>
-	      <p class="mb-8 leading-relaxed">FARMERS BRIGHT AND SECURE FUTURE COMPANION</p>
-	      <div class="flex justify-center">
-	        <a href="products.html"><button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">VIEW PRODUCTS</button></a>
-	        <a href="#contact"><button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">CONTACT</button></a>
+	      <div class="item">
+	        <img src="./img/visit3.jpg" alt="Chicago" style="width:100%;">
+	      </div>
+	    
+	      <div class="item">
+	        <img src="./img/visit1.jpg" alt="New york" style="width:100%;">
 	      </div>
 	    </div>
-	  </div>
 
-	  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-	    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-	      <img class="object-cover object-center rounded" alt="hero" src="./img/cat02.png">
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	  
+	</div>
+	<hr class="style4">
+	<div class="container-fluid committs" style="background-image: linear-gradient(lightgreen,transparent);">
+		<p>We at Dhanbhoomi Agrotech are committed to the farming community for giving quality Organic Farming Products.</p>
+		<p>Our products are well accepted by the progressive farmers and our increasing turnover is the testimony to the quality of our products and acceptance in the market.</p>
+	</div>
+	<hr class="style4">
+	<div class="container items-center justify-center text-center">
+	    <div class="col-sm-12">
+	      <img class="img-responsive center-block" alt="hero" src="./img/cat02.png" style="width: 50%;"><br>
 	    </div>
-	  </div>
+	</div>
+	<hr class="style4">
 
-	</section>
-
-	<section class="text-gray-700 body-font relative" id="contact">
-		<div class="container px-5 py-24 mx-auto">
-
-		  	<div class="flex flex-col text-center w-full mb-12">
-		      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-		      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">For better experience</p>
-		    </div>
-		  	<div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-		          <a class="text-indigo-500">dhanbhoomi@yahoo.com</a>
-		          <p class="leading-normal my-5">DHANBHOOMI AGROTECH PVT. LTD.<br>
-					Undri, Tal.- Haveli,Dist.- Pune 411060 Maharashtra, India.<br>
-		           
-		          </p>
-		          <span class="inline-flex">
-		            <a class="text-gray-500">
-		              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-		                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-		              </svg>
-		            </a>
-		            <a class="ml-4 text-gray-500">
-		              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-		                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-		              </svg>
-		            </a>
-		            <a class="ml-4 text-gray-500">
-		              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-		                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-		                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-		              </svg>
-		            </a>
-		            <a class="ml-4 text-gray-500">
-		              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-		                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-		              </svg>
-		            </a>
-		          </span>
-		    </div>
-		 </div>
-	</section>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<script>
-		//Get the button
-		var mybutton = document.getElementById("myBtn");
-
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		    mybutton.style.display = "block";
-		  } else {
-		    mybutton.style.display = "none";
-		  }
-		}
-
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0;
-		  document.documentElement.scrollTop = 0;
-		}
-	</script>
-
+	<div class="container" id="about">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 banner-info">
+				<h1 class="big-text">About Us</h1>
+				<p style="font-size: 18px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Shri Sandeep Hanumant Hole</b> has born in <b>Rural and Farmer</b> Family.  He was having kind of different techniques to improve the farming and also the crops quality as well.  He belongs to <b>Pilgrim Religious</b> movement .  He has spread mindset through <b>Organic Farming</b> to the end number of Farmers.</p>
+				<p style="font-size: 18px;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; He has reached to the Organic Farmers by <b>TopLife Group of Companies</b>.  He has been honoured to be as a <b>CEO</b> being for 7 Year's of good experience.  Along with 7 years experience now we are ready to serve our best to improve the <b>Organic Farming</b>.</p><br>
+				<p style="font-size: 19px;color: green;"><b>WITNESS FOR BRIGHT FUTURE AND SAFETY TO OUR FARMERS !!!!!!!!!!!</b></p>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 banner-image" style="display: flex;justify-content: center;align-items: center; flex-wrap: wrap;">
+				<div>
+					<img src="./img/sandeep_sir.png" class="img-responsive" style="margin-top: 15%;margin-left: 5%;">
+				</div>
+			</div>
+		</div>			
+	</div>
+	<hr class="style4">
 	
-	<div style="" w3-include-html="footer.html"></div>
+	<div class="container text-center" id="contact">
+		<h1 class="big-text">Contact Us</h1>
+		<h4>For Better Experience</h4>
+		<hr class="style1">
+		<h3>DHANBHOOMI AGROTECH PVT. LTD.</h3>
+		<h4>Undri, Tal.- Haveli,Dist.- Pune 411060 Maharashtra, India.</h4>
+		<h4><i class="fa fa-phone"></i>&nbsp;+91 7058010511&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i>&nbsp;+91 9370659228&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone"></i>&nbsp;+91 9960167230</h4>
+		<h4><i class="fa fa-envelope-o"></i>&nbsp;dhanbhoomi@yahoo.com</h4>
+		<h1>
+			<i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-twitter"></i>&nbsp;&nbsp;&nbsp;
+			<i class="fa fa-instagram"></i>
+		</h1>
+	</div>
+	<hr class="style4">
+	
+	<div class="container">
+		<!-- Footer -->
+		<footer class="page-footer font-small blue">
+
+		  <!-- Copyright -->
+		  <div class="footer-copyright text-center py-3">Website Developer : 
+		    <a href="http://shanasolutions.github.io/shanasolutions"><i class="fa fa-globe"></i>&nbsp;Shana Solutions</a> &nbsp;&nbsp;<i class="fa fa-phone"></i>&nbsp;+91 8329996079 &nbsp;&nbsp;<i class="fa fa-envelope-o"></i>&nbsp;shanasolutions@gmail.com</h4>
+		  </div>
+		  <!-- Copyright -->
+
+		</footer>
+		<!-- Footer -->
+	</div>
+	<a  class="whats-app" href="https://wa.me/918329996079/?text=Hello" target="_blank">
+	    <i class="fa fa-whatsapp my-float"></i>
+	</a>	
 </body>
 </html>

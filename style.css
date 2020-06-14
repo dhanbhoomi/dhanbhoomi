@@ -1,28 +1,262 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    background:#fff;
+    animation: fadeInAnimation ease 3s ;
+    animation-iteration-count: 0.9; 
+    animation-fill-mode: forwards; 
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+	scroll-behavior: smooth;
+}
+
+.header{
+	height: 20vh;
+}
+
+.navbar-style{
+	box-shadow: 0 5px 10px #efefef;
+	text-transform: uppercase;
+}
+
+.logo{
+	height: 100px;
+	padding: 2px 10px;
+}
+.navbar-nav > li > a {
+ line-height: 100px;
+ padding-top: 25px;
+ padding-bottom: 25px;
+}
+
+.navbar-right {
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    /*main box*/
+    .black-bar{
+        display: none;
+    }
+}
+.icon-bar{
+	background: green;
+}
+
+li a{
+	color: #333;
+}
+
+.big-text{
+	font-size: 48px;
+	margin: 20px 0;
+	color: green;
+	font-weight: bold;
+}
+
+.slogan{
+	font-size: 22px;
+	margin: 0px;
+	color: darkgreen;
+}
+
+.committs{
+	font-size: 20px;
+	text-align: justify;
+}
+
+a.btn{
+	margin: 30px 10px;
+	width: 150px;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+a.btn-first{
+	background: green;
+	color: #fff;
+}
+
+a.btn-second{
+	background: transparent;
+	border:1px solid green;
+	color: #333;
+}
+
+a.btn:hover{
+	background: green;
+	border: none;
+	color: #fff;
+	box-shadow: 5px 5px 10px #999;
+	transition: 0.3s;
+}
+
+.banner-info, .banner-image{
+	margin: 30px 0;
+}
+
+.banner-info{
+	vertical-align: middle;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,70px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,70px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.black-bar{
+    background: green;
+    overflow: hidden;
+    z-index: 1;
+    padding: 5px 0px 5px 0px;
+}
+.black-bar i{
+    color: #fff;
+    font-weight: 600;
+}
+.black-bar a{
+    color: #fff;
+    font-family: kalam,cursive;
+    font-size: 12px;
+}
+
+hr.style1 {
+	border: 0;
+	height: 1px;
+	background: #333;
+	background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+	background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+hr.style2 {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.style3 {
+border: 0;
+height: 55px;
+background-image: url(./img/hr_image.png);
+background-repeat: no-repeat;
+}
+
+hr.style4 {
+	height: 12px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgb(0,128,0);
+}
+
+.tales {
+  width: 100%;
+}
+.carousel-inner{
+  width:auto;
+  max-height: 600px !important;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: auto;    /* Set slide height here */
+
+}
+
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 70px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+p {
+	text-align: justify;
 }
 
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 10px;
+  right: 15px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   outline: none;
   background-color: green;
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 22px;
 }
 
 #myBtn:hover {
   background-color: #555;
+}
+
+
+.fa-facebook {
+	color: #3b5998;
+}
+
+.fa-instagram {
+	color: #3f729b;
+}
+
+.fa-twitter {
+	color: #55acee;
 }
