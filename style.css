@@ -19,6 +19,11 @@ html{
 	height: 20vh;
 }
 
+.navbar{
+  position: relative;
+  z-index: 100;
+}
+
 .navbar-style{
 	box-shadow: 0 5px 10px #efefef;
 	text-transform: uppercase;
@@ -43,6 +48,12 @@ html{
     .black-bar{
         display: none;
     }
+
+    .logo {
+        height: 60px;
+        padding: 1px 5px;
+    }
+
 }
 .icon-bar{
 	background: green;
@@ -88,12 +99,20 @@ a.btn-second{
 	color: #333;
 }
 
-a.btn:hover{
+a.btn-second:hover{
 	background: green;
 	border: none;
 	color: #fff;
 	box-shadow: 5px 5px 10px #999;
 	transition: 0.3s;
+}
+a.btn-first:hover{
+  background: transparent;
+  border: none;
+  color: #333;
+  border:1px solid green;
+  box-shadow: 5px 5px 10px #999;
+  transition: 0.3s;
 }
 
 .banner-info, .banner-image{
@@ -108,30 +127,30 @@ a.btn:hover{
 
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,70px,0)
+        transform: translate3d(0,200px,0)
     }
 
     to {
         transform: translate3d(0,0,0);
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,70px,0)
+        transform: translate3d(0,200px,0)
     }
 
     to {
         transform: translate3d(0,0,0);
-        opacity: 1
+        opacity: 1;
     }
 }
 
 .animated {
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-fill-mode: both
 }
 
