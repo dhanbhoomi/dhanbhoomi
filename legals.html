@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DHANBHOOMI AGROTECH</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="./js/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/import.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div w3-include-html="header.html"></div>
+<script>
+	includeHTML();
+</script>
+<br>
+	
+	<div class="container items-center justify-center text-center" style="padding: 0;">
+	    <div class="col-sm-12" style="padding: 0;">
+	      <img class="img-responsive center-block legals" alt="hero" src="./img/cat02.png" style="width: 50%;padding: 0;"><br>
+	      <h3>Legal1</h3>
+	    </div>
+	</div>
+	<hr class="style4">	
+	<div class="container items-center justify-center text-center" style="padding: 0;">
+	    <div class="col-sm-12" style="padding: 0;">
+	      <img class="img-responsive center-block legals" alt="hero" src="./img/cat02.png" style="width: 50%;padding: 0;"><br>
+	      <h3>Legal2</h3>
+	    </div>
+	</div>
+	<hr class="style4">	
+	<div class="container items-center justify-center text-center" style="padding: 0;">
+	    <div class="col-sm-12" style="padding: 0;">
+	      <img class="img-responsive center-block legals" alt="hero" src="./img/cat02.png" style="width: 50%;padding: 0;"><br>
+	      <h3>Legal3</h3>
+	    </div>
+	</div>
+	
+	<hr class="style4">	
+	<div w3-include-html="footer.html"></div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+	<a  class="whats-app" href="https://wa.me/918329996079/?text=Hello" target="_blank">
+	    <i class="fa fa-whatsapp my-float"></i>
+	</a>	
+</body>
+</html>
