@@ -78,6 +78,7 @@ html{
       margin-right:0;
     }
 }
+
 .icon-bar{
 	background: green;
 }
@@ -85,6 +86,10 @@ html{
 li a{
 	color: #333;
   font-weight: bold;
+}
+
+.padding-zero {
+  padding: 0;
 }
 
 .big-text{
