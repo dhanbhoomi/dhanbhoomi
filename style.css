@@ -101,6 +101,28 @@ li a{
   text-shadow: 2px 2px white;
 }
 
+.phead{
+  text-align: center;
+  color: green;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: kalam;
+}
+
+.pimg{
+  background-color: #313231;
+  text-align: center;
+}
+
+.imgp{
+  width:250px;
+  height: auto;
+}
+
+.mimg{
+  width: 100%;
+}
+
 .slogan{
 	font-size: 22px;
 	margin: 0px;
