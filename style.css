@@ -102,6 +102,7 @@ li a{
 }
 
 .phead{
+  height: 55px;
   text-align: center;
   color: green;
   text-transform: uppercase;
@@ -112,6 +113,7 @@ li a{
 .pimg{
   background-color: #313231;
   text-align: center;
+  width: 100%;
 }
 
 .imgp{
